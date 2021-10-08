@@ -1,0 +1,48 @@
+PHASE 1 - SET-UP
+===
+- Initialize Git
+    - []``` git init ```
+- []Create Infrastructure to Support App
+    - []Server Folder
+        - []server.js
+        - []Public Folder
+            - []index.html
+            - []Scripts Folder
+                - []client.js
+            - []Vendors Folder
+                - []jquery.js
+            - []Styles Folder
+                - []styles.css
+        - [] Modules Folder
+            - []pool.js
+- Install
+    - []```npm install --y```
+    - []```npm install express pg```
+- Populate
+    - server.js
+        - []//REQUIRES
+            - Express
+            - App
+            - BodyParser
+            - Pool
+        - []//USES
+            - express
+            - podyParser
+        - []//GLOBALS
+            - Port
+        - []//SPIN UP SERVER
+            - app.listen
+        - []//ROUTES
+    - pool.js
+        - []requires pg
+        - []pool
+            host, port, max, idleTimeoutMillis
+        - []Don't forget to export!
+- Link Documents
+    - []INDEX.HTML
+        - client.js
+        - jquery.js
+        - styles.css
+    - []PACKAGE.JSON
+        - Repository
+            - "start": "node server/server.js"
